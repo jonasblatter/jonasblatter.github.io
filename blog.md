@@ -3,4 +3,4 @@ layout: blog
 title: Latest Posts
 ---
 
-[*Go Home >*][https://jonasblatter.github.oi/]
+[*Go Home >*](https://jonasblatter.github.oi/)
