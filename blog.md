@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Jonas Blatter - Latest Posts
+title: Latest Posts
 ---
 
-*View all >*
+[*Go Home >*][https://jonasblatter.github.oi/]
