@@ -3,4 +3,6 @@ layout: blog
 title: Latest Posts
 ---
 
-[*Go Home >*](https://jonasblatter.github.oi/)
+{% include posts.html %}
+
+[*Go Home >*](https://jonasblatter.github.io/)
