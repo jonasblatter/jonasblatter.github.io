@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Jonas Blatter
+title: Welcome!
+author: Jonas Blatter
 ---
 
 !! Site Under Construction !!
