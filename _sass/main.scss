@@ -98,18 +98,16 @@ dd + dt, dt + dd {margin-top: 1em;}
   top: 0;
   width: $base-width;
 }
-.sticker {
-  margin-top: 49.5px;
-}
+.sticker {margin-top: 49.5px;}
 
 @media screen and (max-width: 1000px) {
   body {grid-template-columns: auto 500px 200px auto;}
-  $base-width: 720px;
+  .sticky, footer div {width: 720px;}
 }
 
 @media screen and (max-width: 800px) {
   body {grid-template-columns: auto 400px 200px auto;}
-  $base-width: 620px;
+  .sticky, footer div {width: 620px;}
 }
 
 @media screen and (max-width: 650px) {
@@ -124,5 +122,5 @@ dd + dt, dt + dd {margin-top: 1em;}
     grid-template-rows: min-content min-content auto 60px;
     grid-template-columns: 0px auto 0px;
   }
-  $base-width: 100%;
+  .sticky, footer div {width: 100%;}
 }
