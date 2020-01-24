@@ -12,27 +12,30 @@ body {
   grid-gap: 20px;
   grid-template-areas:
   'left header header right'
+  'left navbar navbar right'
   'left article menu right'
   'footer footer footer footer';
-  grid-template-rows: min-content auto 60px;
+  grid-template-rows: min-content min-content auto 60px;
   grid-template-columns: auto 600px 300px auto;
   background-color: lightblue;
 }
 
 header {
   grid-area: header;
-  div {
-    overflow: hidden;
-    img {
-      width: 100%;
-      display: block;
-    }
+  overflow: hidden;
+  img {
+    width: 100%;
+    display: block;
   }
+}
+
+section {
+  grid-area: navbar;
+  position: sticky;
+  background-color: #333;
+  color: white;
   nav {
-    color: white;
-    background-color: #333;
     overflow: hidden;
-    position: sticky;
     a {
       display: block;
       float: left;
