@@ -16,12 +16,12 @@
 	  </header>
 
 	  <!-- <main> -->
-	  <article>
+	  <article id="content">
 			<h1>{{ page.title }}</h1>
 			{{ content }}
 	  </article>
 
-		<aside>
+		<aside id="menu">
 	    <nav>
 	      <a href="#">First</a>
 	    	<a href="#">Second</a>
@@ -36,4 +36,24 @@
 		</footer>
 
 	</body>
+	<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var content = document.getElementById("content");
+var menu = document.getElementById("menu");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+		content.classList.add("sticker");
+		menu.classList.add("sticker")
+  } else {
+    navbar.classList.remove("sticky");
+	  content.classList.remove("sticker");
+	  menu.classList.remove("sticker");
+  }
+}
+</script>
 </html>

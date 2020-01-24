@@ -128,3 +128,12 @@ dd {
 dd + dt, dt + dd {
   margin-top: 1em;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticker {
+  margin-top: 49.5px;
+}
