@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header id="header">
 	  	<div>
 	    	<img src="/assets/img/header.png" alt="">
 	      {% include navigation.html %}
@@ -36,24 +36,4 @@
 		</footer>
 
 	</body>
-	<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var content = document.getElementById("content");
-var menu = document.getElementById("menu");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-		content.classList.add("sticker");
-		menu.classList.add("sticker")
-  } else {
-    navbar.classList.remove("sticky");
-	  content.classList.remove("sticker");
-	  menu.classList.remove("sticker");
-  }
-}
-</script>
 </html>
