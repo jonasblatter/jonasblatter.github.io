@@ -2,3 +2,13 @@ title: Jonas Blatter
 logo: https://avatars2.githubusercontent.com/u/14215958
 markdown: kramdown
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
