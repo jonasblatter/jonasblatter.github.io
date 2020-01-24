@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-	<html class="h-100" lang="en">
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-			 <!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-			<!-- jQuery library -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-			<!-- Popper JS -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-			<!-- Latest compiled JavaScript -->
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
-		</head>
-		<body class="d-flex flex-column h-100">
-			<header>
-			{% include navigation.html %}
-			</header>
-				
-			<main role="main" class="flex-shrink-0">
-				<div class="container">
-				<h1 class="mt-5">{{ page.title }}</h1>
-				{{ content }}
-				</div>
-			</main>
-			
-			<footer class="footer mt-auto py-3">
-				<div class="container">
-	    				<ul class="text-muted">
-	        				<li><a href="mailto:jonasblatter@outlook.com">email</a></li>
-	        				<li><a href="https://github.com/jonasblatter">github.com/jonasblatter</a></li>
-					</ul>
-				</div>
-			</footer>
-		</body>
-	</html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+	  <title>{{ page.title }}</title>
+	  <link href="./assets/css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+	  	<div>
+	    	<img src="https://i.pinimg.com/originals/f2/de/8b/f2de8b0ad5abc3780a19dc7f78f22114.jpg" alt="">
+	      {% include navigation.html %}
+	  	</div>
+	  </header>
+
+	  <!-- <main> -->
+	  <article>
+			<h1>About Me</h1>
+			{{ content }}
+	  </article>
+
+		<aside>
+	    <nav>
+	      <a href="#">First</a>
+	    	<a href="#">Second</a>
+	  	</nav>
+	  </aside>
+	  <!-- </main> -->
+
+		<footer>
+	    <div>
+	    	{$ include footer $}
+	  	</div>
+		</footer>
+
+	</body>
+</html>

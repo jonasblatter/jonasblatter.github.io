@@ -1,1 +1,126 @@
+html, body {
+  height:100%;
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Verdana, sans-serif;
+}
 
+body {
+  display: grid;
+  align-items: stretch;
+  grid-gap: 20px;
+  grid-template-areas:
+  'left header header right'
+  'left article menu right'
+  'footer footer footer footer';
+  grid-template-rows: min-content auto 60px;
+  grid-template-columns: auto 600px 300px auto;
+  background-color: lightblue;
+}
+
+header {
+  grid-area: header;
+}
+
+header div {
+  overflow: hidden;
+}
+
+header div img {
+  margin: -20% 0 0 0;
+  width: 100%;
+  display: block;
+}
+
+header nav {
+  color: white;
+  background-color: #333;
+  overflow: hidden;
+}
+
+header nav a {
+  display: block;
+  float: left;
+  color: white;
+  text-align: center;
+  min-width: 50px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header nav a.active {
+  background-color: #666;
+}
+
+header nav a:hover {
+  background-color: #111;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+  /* background-color: lightgrey; */
+}
+
+article {
+  grid-area: article;
+  background-color: white;
+  padding: 1em 2em;
+}
+
+aside {
+   grid-area: menu;
+   background-color: #ececec;
+}
+
+aside nav a {
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 0.5em;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  grid-area: footer;
+  height: 100px;
+  width: 100%;
+  color: white;
+  margin-top: auto;
+  background-color: #333;
+}
+
+footer div {
+  padding: 1em 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: lightgrey;
+    grid-template-columns: auto 500px 200px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: lightgrey;
+    grid-template-columns: auto 400px 200px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background-color: olive;
+    grid-gap: 10px;
+    grid-template-areas:
+    'header header header'
+    'left menu right'
+    'left article right'
+    'footer footer footer';
+    grid-template-rows: min-content min-content auto 60px;
+    grid-template-columns: 0px auto 0px;
+  }
+}
