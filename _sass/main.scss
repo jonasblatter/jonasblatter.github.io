@@ -89,15 +89,6 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 1000px) {
-  body {
-    background-color: lightgrey;
-    grid-template-columns: auto 500px 200px auto;
-  }
-  footer div {max-width: 720px}
-}
-
 dt {float: right;}
 dd {margin: 0;}
 dd + dt, dt + dd {margin-top: 1em;}
@@ -109,6 +100,11 @@ dd + dt, dt + dd {margin-top: 1em;}
 }
 .sticker {
   margin-top: 49.5px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {grid-template-columns: auto 500px 200px auto;}
+  $base-width: 720px;
 }
 
 @media screen and (max-width: 800px) {
