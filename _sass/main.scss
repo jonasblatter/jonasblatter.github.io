@@ -120,3 +120,13 @@ footer {
     grid-template-columns: 0px auto 0px;
   }
 }
+
+dt {
+  float: right;
+}
+dd {
+  margin: 0;
+}
+dd + dt, dt + dd {
+  margin-top: 1em;
+}
