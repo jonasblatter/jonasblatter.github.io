@@ -1,3 +1,5 @@
+$base-width: 920px;
+
 html, body {
   height:100%;
   margin: 0;
@@ -82,7 +84,7 @@ footer {
   color: white;
   background-color: #333;
   div {
-    max-width: 920px;
+    max-width: $base-width;
     margin: auto;
   }
 }
@@ -96,12 +98,22 @@ footer {
   footer div {max-width: 720px}
 }
 
+dt {float: right;}
+dd {margin: 0;}
+dd + dt, dt + dd {margin-top: 1em;}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: $base-width;
+}
+.sticker {
+  margin-top: 49.5px;
+}
+
 @media screen and (max-width: 800px) {
-  body {
-    background-color: lightgrey;
-    grid-template-columns: auto 400px 200px auto;
-  }
-  footer div {max-width: 620px}
+  body {grid-template-columns: auto 400px 200px auto;}
+  $base-width: 620px;
 }
 
 @media screen and (max-width: 650px) {
@@ -116,24 +128,5 @@ footer {
     grid-template-rows: min-content min-content auto 60px;
     grid-template-columns: 0px auto 0px;
   }
-  footer div {margin: 0 10px}
-}
-
-dt {
-  float: right;
-}
-dd {
-  margin: 0;
-}
-dd + dt, dt + dd {
-  margin-top: 1em;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticker {
-  margin-top: 49.5px;
+  $base-width: 100%;
 }
