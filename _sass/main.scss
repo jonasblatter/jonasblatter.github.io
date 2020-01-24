@@ -32,6 +32,7 @@ header {
     color: white;
     background-color: #333;
     overflow: hidden;
+    position: sticky;
     a {
       display: block;
       float: left;
@@ -66,7 +67,6 @@ aside {
    grid-area: menu;
    background-color: #ececec;
    nav {
-     position: sticky;
      a {
        display: block;
        color: black;
