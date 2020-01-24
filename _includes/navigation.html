@@ -1,13 +1,5 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-
-  <ul class="navbar-nav">
+<nav>
   {% for item in site.data.navigation %}
-    <li class="nav-item {% if page.url == item.link %}active{% endif %}">
-      <a href="{{ item.link }}" class="nav-link">
-      {{ item.name }}
-    </a>
-    </li>
+  <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a>
   {% endfor %}
-  </ul>
-
 </nav>
