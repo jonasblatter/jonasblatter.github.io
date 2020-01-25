@@ -45,6 +45,7 @@ header {
 section {
   grid-area: navbar;
   background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: white;
   nav {
     overflow: hidden;
@@ -151,6 +152,7 @@ dd + dt, dt + dd {margin-top: 1em;}
     }
   }
   main {
+    margin-top: 75px;
     padding: 0px;
     display: block;
   }
