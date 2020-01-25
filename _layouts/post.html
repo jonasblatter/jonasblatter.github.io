@@ -3,9 +3,15 @@ layout: default
 ---
 
 <main class="post" id="content">
-  <aside>
+  <aside id="left">
     <nav>
-      <a href="/blog">Back</a>
+      <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>
+    </nav>
+  </aside>
+  
+  <aside id="right">
+    <nav>
+      <a href="{{ page.previous.url }}">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
     </nav>
   </aside>
 
