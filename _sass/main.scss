@@ -118,14 +118,18 @@ dd + dt, dt + dd {margin-top: 1em;}
     grid-template-areas:
     'header header header'
     'left main right'
-    'left footer right'
-    'navbar navbar navbar';
-    grid-template-rows: min-content min-content auto 60px;
+    'left footer right';
+    grid-template-rows: min-content auto 60px;
     grid-template-columns: 0px auto 0px;
   }
   section {
-    position: absolute;
+    position: fixed;
+    width: 100%;
     bottom: 0;
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   main {
     padding: 10px;
