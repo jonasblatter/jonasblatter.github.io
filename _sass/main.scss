@@ -12,9 +12,9 @@ body {
   align-items: stretch;
   grid-gap: 0px;
   grid-template-areas:
-  'none header none'
-  'none navbar none'
-  'none main none'
+  'left header right'
+  'left navbar right'
+  'left main right'
   'footer footer footer';
   grid-template-rows: min-content min-content auto min-content;
   grid-template-columns: auto var(--base-width) auto;
