@@ -128,12 +128,8 @@ dd + dt, dt + dd {margin-top: 1em;}
   :root {--base-width: 100%;}
   body {
     background-color: olive;
-    grid-template-areas:
-    'header header header'
-    'left main right'
-    'left footer right';
-    grid-template-rows: min-content auto 150px;
-    grid-template-columns: 10px auto 10px;
+    display: block;
+    padding: 50px 10px;
   }
   header {
     h1, p {font-size: 1em;}
@@ -149,9 +145,6 @@ dd + dt, dt + dd {margin-top: 1em;}
   }
   main {
     padding: 10px;
-    grid-template-areas:
-      'menu'
-      'article';
-    grid-template-columns: auto;
+    display: block;
   }
 }
