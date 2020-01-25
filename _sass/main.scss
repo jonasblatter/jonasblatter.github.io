@@ -69,13 +69,13 @@ main {
 
 article {
   grid-area: article;
-  padding: 2em;
+  padding: 1em 2.5em;
   background-color: white;
 }
 
 aside {
    grid-area: menu;
-   padding: 2em;
+   padding: 1em;
    background-color: #ececec;
    nav {
      a {
