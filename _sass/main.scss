@@ -16,7 +16,7 @@ body {
   'left navbar right'
   'left main right'
   'footer footer footer';
-  grid-template-rows: min-content min-content auto 60px;
+  grid-template-rows: min-content min-content auto min-content;
   grid-template-columns: auto var(--base-width) auto;
   background-color: lightblue;
 }
@@ -30,9 +30,9 @@ header {
     display: block;
   }
   h1 {
-    font-size: 2em;
+    font-size: 4em;
     font-weight: lighter;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 0;
   }
   p {
