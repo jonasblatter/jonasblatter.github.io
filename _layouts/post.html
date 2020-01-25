@@ -2,12 +2,16 @@
 layout: default
 ---
 
-<aside id="menu">
-  {% include toc.html %}
-</aside>
+<main class="post" id="content">
+  <aside>
+    <nav>
+      <a href="/blog">Back</a>
+    </nav>
+  </aside>
 
-<article id="article">
-  <h1>{{ page.title }}</h1>
-  <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-  {{ content }}
-</article>
+  <article id="article">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+    {{ content }}
+  </article>
+</main>

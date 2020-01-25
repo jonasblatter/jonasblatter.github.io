@@ -72,9 +72,19 @@ main {
   align-items: stretch;
   grid-gap: 20px;
   padding: 20px 0;
-  grid-template-areas:
+  &.page {
+    grid-template-areas:
     'article menu';
-  grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
+  }
+  &.post {
+    grid-template-areas:
+    'menu article none';
+    grid-template-columns: 1fr 6fr 1fr;
+    aside {
+      height: auto;
+    }
+  }
 }
 
 article {
