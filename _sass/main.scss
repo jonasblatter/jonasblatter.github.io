@@ -109,6 +109,7 @@ footer {
   div {
     max-width: var(--base-width);
     margin: auto;
+    padding: 0.5em 1em;
   }
 }
 
@@ -127,24 +128,22 @@ dd + dt, dt + dd {margin-top: 1em;}
 @media screen and (max-width: 650px) {
   :root {--base-width: 100%;}
   body {
-    background-color: olive;
     display: block;
-    padding: 50px 10px;
-  }
-  header {
-    h1, p {font-size: 1em;}
+    padding: 10px;
   }
   section {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left:0
     nav {
       display: flex;
       justify-content: space-around;
     }
   }
   main {
-    padding: 10px;
+    padding: 0px;
     display: block;
   }
+  footer {margin-bottom: 60px}
 }
