@@ -24,9 +24,22 @@ body {
 header {
   grid-area: header;
   overflow: hidden;
+  text-align: center;
   img {
     width: 100%;
     display: block;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 2em;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2em;
   }
 }
 
@@ -129,8 +142,7 @@ dd + dt, dt + dd {margin-top: 1em;}
     bottom: 0;
     nav {
       display: flex;
-      justify-content: space-between;
-      a {width: auto;}
+      justify-content: space-around;
     }
   }
   main {
