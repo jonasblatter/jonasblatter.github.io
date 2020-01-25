@@ -18,7 +18,7 @@ body {
   'footer footer footer';
   grid-template-rows: min-content min-content auto min-content;
   grid-template-columns: auto var(--base-width) auto;
-  background-color: lightblue;
+  background-color: #ececec;
 }
 
 header {
@@ -26,6 +26,7 @@ header {
   overflow: hidden;
   text-align: center;
   padding: 2em;
+  background-color: #ececec;
   img {
     width: 100%;
     display: block;
