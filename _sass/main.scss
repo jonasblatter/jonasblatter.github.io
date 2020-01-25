@@ -79,7 +79,7 @@ main {
   }
   &.post {
     grid-template-areas:
-    'menu article none';
+    'left article right';
     grid-template-columns: 1fr 6fr 1fr;
     aside {
       height: auto;
@@ -108,6 +108,8 @@ aside {
        text-decoration: none;
      }
    }
+  &.left {grid-area: left;}
+  &.right {grid-area: right;}
 }
 
 section, article, aside {
