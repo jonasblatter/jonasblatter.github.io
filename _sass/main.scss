@@ -18,7 +18,7 @@ body {
   'footer footer footer';
   grid-template-rows: min-content min-content auto min-content;
   grid-template-columns: auto var(--base-width) auto;
-  background-color: #ececec;
+  background-color: lightblue;
 }
 
 header {
@@ -26,18 +26,19 @@ header {
   overflow: hidden;
   text-align: center;
   padding: 2em;
-  background-color: #ececec;
   img {
     width: 100%;
     display: block;
   }
   h1 {
-    font-size: 4em;
+    font-size: 2em;
     font-weight: lighter;
+    margin: 0;
   }
   p {
-    font-size: 2em;
+    font-size: 1em;
     font-style: italic;
+    margin: 0;
   }
 }
 
@@ -135,11 +136,9 @@ dd + dt, dt + dd {margin-top: 1em;}
     top: 0;
     left: 0;
     text-align: left;
-    padding: 0.5em;
-    h1, p {
-      font-size: 1em;
-      display: inline-block;
-    }
+    padding: 1em;
+    h1, p {display: inline-block;}
+    background-color: #ececec;
   }
   section {
     position: fixed;
