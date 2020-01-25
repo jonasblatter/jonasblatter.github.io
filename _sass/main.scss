@@ -12,9 +12,9 @@ body {
   align-items: stretch;
   grid-gap: 0px;
   grid-template-areas:
-  'left header right'
-  'left navbar right'
-  'left main right'
+  'none header none'
+  'none navbar none'
+  'none main none'
   'footer footer footer';
   grid-template-rows: min-content min-content auto min-content;
   grid-template-columns: auto var(--base-width) auto;
@@ -87,6 +87,9 @@ main {
   }
 }
 
+.left {grid-area: left;}
+.right {grid-area: right;}
+
 article {
   grid-area: article;
   padding: 1em 2.5em;
@@ -108,8 +111,6 @@ aside {
        text-decoration: none;
      }
    }
-  &.left {grid-area: left;}
-  &.right {grid-area: right;}
 }
 
 section, article, aside {
