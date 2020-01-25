@@ -45,7 +45,6 @@ header {
 section {
   grid-area: navbar;
   background-color: #333;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: white;
   nav {
     overflow: hidden;
@@ -140,6 +139,7 @@ dd + dt, dt + dd {margin-top: 1em;}
     padding: 1em;
     h1, p {display: inline-block;}
     background-color: #ececec;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   section {
     position: fixed;
