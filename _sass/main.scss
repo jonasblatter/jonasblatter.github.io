@@ -32,8 +32,6 @@ header {
 
 section {
   grid-area: navbar;
-  position: sticky;
-  top: 0;
   background-color: #333;
   color: white;
   nav {
@@ -119,11 +117,15 @@ dd + dt, dt + dd {margin-top: 1em;}
     background-color: olive;
     grid-template-areas:
     'header header header'
-    'navbar navbar navbar'
     'left main right'
-    'footer footer footer';
+    'left footer right'
+    'navbar navbar navbar';
     grid-template-rows: min-content min-content auto 60px;
     grid-template-columns: 0px auto 0px;
+  }
+  section {
+    position: absolute;
+    bottom: 0;
   }
   main {
     padding: 10px;
