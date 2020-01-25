@@ -118,8 +118,9 @@ dd + dt, dt + dd {margin-top: 1em;}
     grid-template-areas:
     'header header header'
     'left main right'
-    'left footer right';
-    grid-template-rows: min-content auto 60px;
+    'left footer right'
+    'navbar navbar navbar';
+    grid-template-rows: min-content auto 60px 50px;
     grid-template-columns: 0px auto 0px;
   }
   section {
@@ -129,6 +130,7 @@ dd + dt, dt + dd {margin-top: 1em;}
     nav {
       display: flex;
       justify-content: space-between;
+      a {width: auto;}
     }
   }
   main {
