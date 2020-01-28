@@ -159,7 +159,7 @@ nav a {
 }
 @media screen and (max-width: 680px) {
   body {
-    grid-template-columns: min-content 100px 500px min-content;
+    grid-template-columns: min-content 100px auto min-content;
   }
 }
 
