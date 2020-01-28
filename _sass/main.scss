@@ -168,7 +168,7 @@ nav a {
     'left   footer footer right';
     grid-gap: 10px;
     grid-template-rows: min-content 50px 40px auto min-content min-content;
-    grid-template-columns: auto 50px auto auto;
+    grid-template-columns: min-content 50px auto min-content;
   }
   article {padding: 5mm 10mm;}
 }
