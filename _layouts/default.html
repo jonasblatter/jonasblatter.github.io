@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-  	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <title>{{ page.title }} | {{ site.title }}</title>
-	  <link href="/assets/css/style.css" rel="stylesheet">
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-	</head>
+<head>
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/test.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-	<body>
-		<header id="header">
-			<h1>{{ site.title }}</h1>
-			<p>{{ site.description }}</p>
-		</header>
+  <div class="logo">
+    <img src="/assets/img/profile.png" alt="My profile picture">
+  </div>
 
-		{% include navigation.html %}
+  <header>
+    <h1 class="title">{{ site.title }}</h1>
+    <p class="description">{{ site.description }}</p>
+  </header>
 
-		{{ content }}
+  {% include navigation.html %}
 
-		{% include footer.html %}
+  {{ content }}
 
-	</body>
+  {% include footer.html %}
+
+</body>
 </html>

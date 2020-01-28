@@ -1,130 +1,92 @@
-:root {--base-width: 920px;}
-
-html, body {
-  height:100%;
-  position: relative;
-  margin: 0;
-  font-family: "Segoe UI", Helvetica, Verdana, sans-serif;
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
 }
 
 body {
+  margin: 0;
+  height: 100%;
   display: grid;
-  align-items: stretch;
-  grid-gap: 0px;
+  grid-gap: 20px;
   grid-template-areas:
-  'left header right'
-  'left navbar right'
-  'left main right'
-  'footer footer footer';
-  grid-template-rows: min-content min-content auto min-content;
-  grid-template-columns: auto var(--base-width) auto;
-  background-color: lightblue;
+  'left   top     top     top     top     right'
+  'left   logo    main    main    blank   right'
+  'left   header  main    main    aside   right'
+  'left   nav     main    main    aside   right'
+  'left   .       main    main    aside   right'
+  'left   lfoot   footer  footer  rfoot   right';
+  grid-template-rows: min-content 200px 60px 190px auto min-content;
+  grid-template-columns: auto 200px 390px 390px 200px auto;
+  background-color: #eeeeee;
+  &::after {
+    content: " ";
+    grid-area: footer-start / left-start / footer-end / right-end ;
+    background-color: #333333;
+    z-index: -1;
+  }
+}
+
+.logo {
+  grid-area: logo;
+  img {
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
 header {
   grid-area: header;
-  overflow: hidden;
-  text-align: center;
-  padding: 2em;
-  img {
-    width: 100%;
-    display: block;
-  }
-  h1 {
-    font-size: 2em;
-    font-weight: lighter;
+  h1.title {
+    color: #333333;
     margin: 0;
   }
-  p {
-    font-size: 1em;
-    font-style: italic;
+  p.description {
+    color: #999999;
+    font-size: 12pt;
+    font-weight: bold;
     margin: 0;
   }
 }
 
-section {
-  grid-area: navbar;
-  background-color: #333;
-  color: white;
-  nav {
-    overflow: hidden;
-    a {
-      display: block;
-      float: left;
-      color: white;
-      text-align: center;
-      min-width: 50px;
-      padding: 14px 16px;
-      text-decoration: none;
-      &.active {
-        background-color: #666;
-      }
-      &:hover {
-        background-color: #111;
-      }
-    }
-  }
-}
+aside {grid-area: aside;}
 
-main {
-  grid-area: main;
-  display: grid;
-  align-items: stretch;
-  grid-gap: 20px;
-  padding: 20px 0;
-  &.page {
-    grid-template-areas:
-    'article menu';
-    grid-template-columns: 3fr 1fr;
-  }
-  &.post {
-    grid-template-areas:
-    'left article right';
-    grid-template-columns: 1fr 6fr 1fr;
-    aside {
-      height: auto;
-    }
-  }
-}
+main {grid-area: main;}
 
-.left {grid-area: left;}
-.right {grid-area: right;}
+h1,h2,h3,h4,h5,h6 {margin: 1em 0 0.5em 0;}
+h1 {font-size: 18pt;}
 
 article {
-  grid-area: article;
-  padding: 1em 2.5em;
+  padding: 10mm 20mm 15mm 20mm;
   background-color: white;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 }
 
-aside {
-   grid-area: menu;
-   padding: 1em;
-   background-color: #ececec;
-   nav {
-     a {
-       display: block;
-       color: black;
-       background-color: white;
-       padding: 0.5em;
-       margin: 5px;
-       text-align: center;
-       text-decoration: none;
-     }
-   }
+address {
+  grid-area: address;
+  font-style: normal;
 }
 
-section, article, aside {
-  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+a {
+  color: #999999;
+  text-decoration: none;
+  border-bottom: 2px dotted #999999;
+}
+a.active, a:hover {
+  color: #333333;
+  background-color: #dddddd;
+  border-bottom: 2px dotted #333333;
 }
 
 footer {
   grid-area: footer;
   color: white;
-  background-color: #333;
-  div {
-    max-width: var(--base-width);
-    margin: auto;
-    padding: 0.5em 1em;
+  background-color: #333333;
+  padding: 0 1em;
+  a {
+    color: #eee;
+    border-color: #eee;
+    background-color: #333;
   }
 }
 
@@ -132,48 +94,72 @@ dt {float: right;}
 dd {margin: 0;}
 dd + dt, dt + dd {margin-top: 1em;}
 
-@media screen and (max-width: 1000px) {
-  :root {--base-width: 720px;}
-}
-
-@media screen and (max-width: 800px) {
-  :root {--base-width: 620px;}
-}
-
-@media screen and (max-width: 650px) {
-  :root {--base-width: 100%;}
-  body {
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  a {
     display: block;
-    padding: 10px;
+    font-weight: bold;
+    padding: 9px;
   }
-  header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    text-align: left;
-    padding: 1em;
-    h1, p {display: inline-block;}
-    background-color: #ececec;
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 1300px) {
+  body {
+    grid-template-areas:
+    'top  top    top    top    top'
+    'left logo   main   main   right'
+    'left header main   main   right'
+    'left nav    main   main   right'
+    'left aside  main   main   right'
+    'left lfoot  footer footer right';
+    grid-template-rows: min-content 200px 60px 190px auto min-content;
+    grid-template-columns: auto 200px 390px 390px auto;
   }
-  section {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left:0;
-    nav {
-      display: flex;
-      justify-content: space-around;
+}
+@media screen and (max-width: 1080px) {
+  body {grid-template-columns: auto 200px 290px 290px auto;}
+}
+
+@media screen and (max-width: 880px) {
+  body {
+    grid-template-areas:
+    'top  top    top    top'
+    'left logo   header right'
+    'left logo   nav    right'
+    'left main   main   right'
+    'left aside  aside  right'
+    'left footer footer right';
+    grid-template-rows: min-content 40px 40px auto min-content min-content;
+    grid-template-columns: auto 100px 500px auto;
+  }
+  nav {
+    flex-direction: row;
+    align-content: space-between;
+    a {
+      text-align: center;
+      width: 25%;
     }
   }
-  main {
-    margin-top: 75px;
-    padding: 0px;
-    display: block;
+  article {padding: 10mm 15mm;}
+  h1.title {font-size: 16pt;}
+  p.description {font-size: 10pt;}
+}
+@media screen and (max-width: 680px) {
+  body {
+    grid-template-areas:
+    'top    top    top    top'
+    'left   logo   header right'
+    'left   nav    nav    right'
+    'left   main   main   right'
+    'left   aside  aside  right'
+    'left   footer footer right';
+    grid-gap: 10px;
+    grid-template-rows: min-content 50px 40px auto min-content min-content;
+    grid-template-columns: auto 50px auto auto;
   }
-  footer {
-    margin-bottom: 60px;
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
+  article {padding: 5mm 10mm;}
 }
