@@ -53,7 +53,7 @@ p.description {
 aside {grid-area: aside;}
 
 main {grid-area: main;}
-h1,h2,h3,h4,h5,h6 {margin: 1em 0 0.5em 0;}
+h1,h2,h3,h4,h5,h6 {margin: 0;}
 h1 {font-size: 18pt;}
 
 article {
@@ -63,6 +63,7 @@ article {
   &.article {
     height: 100%;
     padding: 10mm 20mm 15mm 20mm;
+    h1,h2,h3,h4,h5,h6 {margin: 1em 0 0.5em 0;}
   }
   &.heading, &.post {
     margin-bottom: 20px;
