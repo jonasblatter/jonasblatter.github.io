@@ -58,11 +58,16 @@ h1 {font-size: 18pt;}
 
 article {
   box-sizing: border-box;
-  padding: 10mm 20mm 15mm 20mm;
   background-color: white;
   box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
-  &.article {height: 100%;}
-  &.heading {margin-bottom: 20px;}
+  &.article {
+    height: 100%;
+    padding: 10mm 20mm 15mm 20mm;
+  }
+  &.heading, &.post {
+    margin-bottom: 20px;
+    padding: 10mm;
+  }
 }
 
 address {
