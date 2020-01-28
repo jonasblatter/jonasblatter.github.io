@@ -159,6 +159,12 @@ nav a {
 }
 @media screen and (max-width: 680px) {
   body {
+    grid-template-columns: min-content 100px 500px min-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
     grid-template-areas:
     'top    top    top    top'
     'left   logo   header right'
