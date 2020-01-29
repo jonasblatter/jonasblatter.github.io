@@ -72,7 +72,7 @@ article {
 }
 
 address {
-  grid-area: address;
+  grid-area: aside;
   font-style: normal;
 }
 
@@ -140,8 +140,8 @@ nav a {
     'left logo   header right'
     'left logo   nav    right'
     'left main   main   right'
-    'left aside  aside  right'
-    'left footer footer right';
+    'left main   main  right'
+    'left footer aside right';
     grid-template-rows: min-content 40px 40px auto min-content min-content;
     grid-template-columns: auto 100px 500px auto;
   }
@@ -152,6 +152,14 @@ nav a {
   nav a {
     text-align: center;
     width: 25%;
+  }
+  address {
+    color: white;
+    padding: 0 1em;
+  }
+  address a {
+    color: #eee;
+    border-color: #eee;
   }
   article.article {padding: 10mm 15mm;}
   h1.title {font-size: 16pt;}
@@ -170,8 +178,8 @@ nav a {
     'left   logo   header right'
     'left   nav    nav    right'
     'left   main   main   right'
-    'left   aside  aside  right'
-    'left   footer footer right';
+    'left   main   main   right'
+    'left   footer aside  right';
     grid-gap: 10px;
     grid-template-rows: min-content 50px 40px auto min-content min-content;
     grid-template-columns: min-content 50px auto min-content;
