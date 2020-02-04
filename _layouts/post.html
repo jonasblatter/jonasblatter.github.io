@@ -16,12 +16,12 @@ layout: default
     <h1>{{ page.title }}</h1>
     {{ content }}
     <p>
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      {{ page.date | date_to_string }}
       <i class="fa fa-user" aria-hidden="true"></i>
-      {{ page.author }}
+      {{ page.author }} &ensp;
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      {{ page.date | date_to_string }} &ensp;
       <i class="fa fa-folder" aria-hidden="true"></i>
-      {{ site.categories.CATEGORY }}
+      {{ page.categories }}
     </p>
   </article>
 </main>
