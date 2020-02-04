@@ -32,11 +32,10 @@ body::after {
   z-index: -1;
 }
 
+img {width: 100%}
+
 .logo {grid-area: logo;}
-.logo img {
-  width: 100%;
-  max-width: 200px;
-}
+.logo img {max-width: 200px;}
 
 header {grid-area: header;}
 h1.title {
