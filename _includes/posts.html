@@ -8,8 +8,7 @@
         <i class="fa fa-calendar" aria-hidden="true"></i>
         {{ page.date | date_to_string }} &ensp;
         <i class="fa fa-folder" aria-hidden="true"></i>
-        {% assign sortedCategories = page.categories | sort %}
-        {% for category in sortedCategories %}
+        {% for category in page.categories %}
             <a href="/blog/{{ category }}">{{ category }} </a>
         {% endfor %}
       </small>
