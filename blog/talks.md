@@ -1,8 +1,8 @@
 ---
 layout: blog
-title: Latest Posts
+title: Talks
 ---
 
-{% for post in site.posts %}
+% for post in site.categories[talks] %}
 {% include posts.html %}
 {% endfor %}
