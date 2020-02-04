@@ -4,11 +4,11 @@
     <p>
       <small>
         <i class="fa fa-user" aria-hidden="true"></i>
-        {{ page.author }} &ensp;
+        {{ post.author }} &ensp;
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        {{ page.date | date_to_string }} &ensp;
+        {{ post.date | date_to_string }} &ensp;
         <i class="fa fa-folder" aria-hidden="true"></i>
-        {% for category in page.categories %}
+        {% for category in post.categories %}
             <a href="/blog/{{ category }}">{{ category }} </a>
         {% endfor %}
       </small>
