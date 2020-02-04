@@ -15,12 +15,17 @@ layout: default
   <article class="article">
     <h1>{{ page.title }}</h1>
     <p>
-      <i class="fa fa-user" aria-hidden="true"></i>
-      {{ page.author }} &ensp;
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      {{ page.date | date_to_string }} &ensp;
-      <i class="fa fa-folder" aria-hidden="true"></i>
-      {{ page.categories }}
+      <small>
+        <i class="fa fa-user" aria-hidden="true"></i>
+        {{ page.author }} &ensp;
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        {{ page.date | date_to_string }} &ensp;
+        <i class="fa fa-folder" aria-hidden="true"></i>
+        {% assign sortedCategories = page.categories | sort %}
+        {% for category in sortedCategories %}
+            <a href="/blog/{{ category }}">{{ category }} </a>
+        {% endfor %}
+      </small>
     </p>
     {{ content }}
   </article>
