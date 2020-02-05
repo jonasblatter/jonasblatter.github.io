@@ -49,7 +49,12 @@ p.description {
   margin: 0;
 }
 
-aside {grid-area: aside;}
+aside {
+  grid-area: aside;
+  &.toc {
+    ul {list-style-type: none;}
+  }
+}
 
 main {grid-area: main;}
 h1,h2,h3,h4,h5,h6 {margin: 0;}
@@ -104,8 +109,6 @@ dd + dt, dt + dd {margin-top: 1em;}
 
 nav {
   grid-area: nav;
-}
-nav, aside.toc {
   ul {
     list-style-type: none;
     margin: 0;
@@ -119,7 +122,6 @@ nav, aside.toc {
     }
   }
 }
-aside.toc ul {padding-left: 10px;}
 
 @media screen and (max-width: 1300px) {
   body {
@@ -150,12 +152,10 @@ aside.toc ul {padding-left: 10px;}
     grid-template-rows: min-content 40px 40px min-content auto min-content;
     grid-template-columns: auto 100px 500px auto;
   }
-  nav, .toc {
+  nav {
     ul {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      li a {
-          text-align: center;
-      }
+      li a {text-align: center;}
     }
   }
   article.article {padding: 10mm 15mm;}
