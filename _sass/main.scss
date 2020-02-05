@@ -91,11 +91,11 @@ footer {
   color: white;
   background-color: #333333;
   padding: 0 1em;
-}
-footer a {
-  color: #eee;
-  border-color: #eee;
-  background-color: #333;
+  a {
+    color: #eee;
+    border-color: #eee;
+    background-color: #333;
+  }
 }
 
 dt {float: right;}
@@ -104,8 +104,6 @@ dd + dt, dt + dd {margin-top: 1em;}
 
 nav {
   grid-area: nav;
-  ul {
-  }
 }
 nav, aside.toc {
   ul {
@@ -153,7 +151,7 @@ nav, aside.toc {
   }
   nav, .toc {
     ul {
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       li a {
           text-align: center;
       }
