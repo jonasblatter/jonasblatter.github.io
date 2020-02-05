@@ -2,8 +2,12 @@
 layout: default
 ---
 <aside class="toc">
-  <h3>Content:</h3>
-  {% include toc.html html=content %}
+  <details>
+    <summary>
+      <h3>Content:</h3>
+    </summary>
+    {% include toc.html html=content %}
+  </details>
 </aside>
 
 <main>
