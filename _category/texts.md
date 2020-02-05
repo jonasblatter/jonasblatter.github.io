@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Category: Texts
+title: "Category: Texts"
 permalink: "/blog/texts"
 ---
 

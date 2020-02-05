@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Category: Talks
+title: "Category: Talks"
 permalink: "/blog/talks"
 ---
 

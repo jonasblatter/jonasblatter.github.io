@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Category: Posters
+title: "Category: Posters"
 permalink: "/blog/posters"
 ---
 

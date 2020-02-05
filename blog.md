@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Latest Posts
+title: "Latest Posts"
 ---
 
 {% for post in site.posts %}

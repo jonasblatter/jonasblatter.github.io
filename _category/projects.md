@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Category: Projects
+title: "Category: Projects"
 permalink: "/blog/projects"
 ---
 
