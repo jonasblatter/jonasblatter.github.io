@@ -7,3 +7,14 @@ layout: default
   </article>
   {{ content }}
 </main>
+
+<aside class="toc">
+  <h3>Categories:</h3>
+  <ul>
+    {% for item in site.data.categories %}
+    <li>
+      <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>
