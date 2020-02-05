@@ -1,30 +1,6 @@
 ---
-layout: default
+layout: page
 ---
-<aside class="toc">
-  <details>
-    <summary>
-      <strong>Content</strong>
-    </summary>
-    {% include toc.html html=content %}
-  </details>
-</aside>
 
-<main>
-  <article class="article">
-    <h1>{{ page.title }}</h1>
-    <p>
-      <small>
-        <i class="fa fa-user" aria-hidden="true"></i>
-        {{ page.author }} &ensp;
-        <i class="fa fa-calendar" aria-hidden="true"></i>
-        {{ page.date | date_to_string }} &ensp;
-        <i class="fa fa-folder" aria-hidden="true"></i>
-        {% for category in page.categories %}
-            <a href="/blog/{{ category }}.html">{{ category }} </a>
-        {% endfor %}
-      </small>
-    </p>
-    {{ content }}
-  </article>
-</main>
+{% include tags.html item=page %}
+{{ content }}

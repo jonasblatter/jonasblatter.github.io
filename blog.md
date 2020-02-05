@@ -3,6 +3,4 @@ layout: blog
 title: "Latest Posts"
 ---
 
-{% for post in site.posts %}
-{% include posts.html %}
-{% endfor %}
+{% include posts.html posts=site.posts %}
