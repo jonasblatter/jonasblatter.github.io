@@ -104,12 +104,13 @@ dd + dt, dt + dd {margin-top: 1em;}
 
 nav {
   grid-area: nav;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
-
-nav, .toc {
+nav, aside.toc {
   ul {
     list-style-type: none;
     margin: 0;
@@ -121,8 +122,10 @@ nav, .toc {
     }
   }
 }
-
-
+aside.toc {
+  position: sticky;
+  top: 20px;
+}
 
 @media screen and (max-width: 1300px) {
   body {
@@ -157,7 +160,6 @@ nav, .toc {
     width: 100%;
     ul {
       flex-direction: row;
-      align-content: space-between;
       li {
         width: 25%;
         a {
