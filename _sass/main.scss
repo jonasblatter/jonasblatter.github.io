@@ -139,8 +139,8 @@ nav a {
     'left logo   header right'
     'left logo   nav    right'
     'left main   main   right'
-    'left main   main  right'
-    'left footer aside right';
+    'left aside  aside  right'
+    'left footer footer right';
     grid-template-rows: min-content 40px 40px auto min-content min-content;
     grid-template-columns: auto 100px 500px auto;
   }
@@ -169,8 +169,8 @@ nav a {
     'left   logo   header right'
     'left   nav    nav    right'
     'left   main   main   right'
-    'left   main   main   right'
-    'left   footer aside  right';
+    'left   aside  aside  right'
+    'left   footer footer right';
     grid-gap: 10px;
     grid-template-rows: min-content 50px 40px auto min-content min-content;
     grid-template-columns: min-content 50px auto min-content;
