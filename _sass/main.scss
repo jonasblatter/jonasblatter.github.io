@@ -19,7 +19,7 @@ body {
   'left   logo    main    main    .       right'
   'left   header  main    main    .       right'
   'left   nav     main    main    aside   right'
-  'left   .       main    main    aside   right'
+  'left   nav     main    main    aside   right'
   'left   lfoot   footer  footer  rfoot   right';
   grid-template-rows: min-content 200px 60px 160px auto min-content;
   grid-template-columns: auto 200px 390px 390px 200px auto;
@@ -52,6 +52,10 @@ p.description {
 aside {
   grid-area: aside;
   &.toc {
+    * {
+      position: sticky;
+      top: 20px;
+    }
     ul {
       list-style-type: none;
       padding-left: 16px;
@@ -117,6 +121,10 @@ dd + dt, dt + dd {margin-top: 1em;}
 
 nav {
   grid-area: nav;
+  * {
+    position: sticky;
+    top: 20px;
+  }
   ul {
     list-style-type: none;
     margin: 0;
