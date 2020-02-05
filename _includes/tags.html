@@ -1,11 +1,11 @@
 <p>
   <small>
     <i class="fa fa-user" aria-hidden="true"></i>
-    {{ item.author }} &ensp;
+    {{ include.item.author }} &ensp;
     <i class="fa fa-calendar" aria-hidden="true"></i>
-    {{ item.date | date_to_string }} &ensp;
+    {{ include.item.date | date_to_string }} &ensp;
     <i class="fa fa-folder" aria-hidden="true"></i>
-    {% for category in item.categories %}
+    {% for category in include.item.categories %}
         <a href="/blog/{{ category }}.html">{{ category }} </a>
     {% endfor %}
   </small>
