@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
+<aside class="toc">
+  <h3>Content:</h3>
+  {% include toc.html html=content %}
+</aside>
+
 <main>
   <article class="article">
     <h1>{{ page.title }}</h1>
     {{ content }}
   </article>
 </main>
-
-<aside class="toc">
-  {% include toc.html html=content %}
-</aside>

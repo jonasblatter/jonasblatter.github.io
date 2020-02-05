@@ -1,13 +1,6 @@
 ---
 layout: default
 ---
-<main>
-  <article class="heading">
-    <h1>{{ page.title }}</h1>
-  </article>
-  {{ content }}
-</main>
-
 <aside class="toc">
   <h3>Categories:</h3>
   <ul>
@@ -18,3 +11,10 @@ layout: default
     {% endfor %}
   </ul>
 </aside>
+
+<main>
+  <article class="heading">
+    <h1>{{ page.title }}</h1>
+  </article>
+  {{ content }}
+</main>
