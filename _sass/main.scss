@@ -52,7 +52,15 @@ p.description {
 aside {
   grid-area: aside;
   &.toc {
-    ul {list-style-type: none;}
+    ul {
+      list-style-type: none;
+      padding-left: 16px;
+      li a {
+        display: block;
+        font-weight: bold;
+        padding: 4px;
+      }
+    }
   }
 }
 
