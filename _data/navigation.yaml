@@ -1,8 +1,18 @@
-- name: About
-  link: /
-- name: CV
-  link: /cv.html
-- name: Blog
-  link: /blog.html
-- name: Contact
-  link: /contact.html
+nav:
+- title: About
+  url: /
+- title: CV
+  url: /cv.html
+- title: Blog
+  url: /blog.html
+  subnav:
+  - title: Posters
+    url: /blog/posters.html
+  - title: Projects
+    url: /blog/projects.html
+  - title: Talks
+    url: /blog/talks.html
+  - title: Texts
+    url: /blog/texts.html
+- title: Contact
+  url: /contact.html

@@ -22,7 +22,9 @@
     <p class="description">{{ site.description }}</p>
   </header>
 
-  {% include navigation.html %}
+  <nav id="navbar">
+    {% include navigation.html nav=site.data.navigation.nav %}
+  </nav>
 
   {{ content }}
 

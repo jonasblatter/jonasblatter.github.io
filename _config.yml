@@ -5,7 +5,5 @@ markdown: kramdown
 
 
 collections:
-  categories:
-    output: true
   category:
     output: true
