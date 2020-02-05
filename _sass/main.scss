@@ -151,12 +151,15 @@ nav {
     grid-template-columns: auto 100px 500px auto;
   }
   nav {
+    width: 100%;
     ul {
       flex-direction: row;
       align-content: space-between;
-      li a {
-        text-align: center;
+      li {
         width: 25%;
+        a {
+          text-align: center;
+        }
       }
     }
   }

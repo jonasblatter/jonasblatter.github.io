@@ -1,4 +1,4 @@
-<ul>
+<!-- <ul>
   {% for item in include.nav %}
     <li><a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
 
@@ -6,17 +6,23 @@
       {% include navigation.html nav=item.subnav %}
     {% endif %}
   {% endfor %}
-</ul>
+</ul> -->
 
-<!-- <nav id="navbar">
-  {% for item in site.data.navigation %}
-  <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>
-  {% if item.subpages[0] %}
+<nav id="navbar">
   <ul>
-    {% for subitem in item.subpages %}
-    <li><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+    {% for item in site.data.navigation %}
+    <li>
+      <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>
+      <!-- {% if item.subnav %}
+      <ul class="subnav">
+        {% for subitem in item.subnav %}
+        <li>
+          <a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="active"{% endif %}>{{ subitem.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %} -->
+    </li>
     {% endfor %}
   </ul>
-  {% endif %}
-  {% endfor %}
-</nav> -->
+</nav>
