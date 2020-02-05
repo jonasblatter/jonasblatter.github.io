@@ -104,13 +104,16 @@ dd + dt, dt + dd {margin-top: 1em;}
 
 nav {
   grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav, .toc {
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     li a {
       display: block;
       font-weight: bold;
