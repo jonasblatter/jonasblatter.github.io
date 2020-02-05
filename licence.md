@@ -1,5 +1,5 @@
 ---
-title: "<i class="fa fa-creative-commons"></i> Attribution 4.0 International"
+title: "<i class='fa fa-creative-commons'></i> Attribution 4.0 International"
 author: creative commons
 ---
 
