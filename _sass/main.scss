@@ -21,7 +21,7 @@ body {
   'left   nav     main    main    aside   right'
   'left   nav     main    main    aside   right'
   'left   lfoot   footer  footer  rfoot   right';
-  grid-template-rows: min-content 200px 60px 160px auto min-content;
+  grid-template-rows: min-content 200px 60px 168px auto min-content;
   grid-template-columns: auto 200px 390px 390px 200px auto;
   background-color: #eeeeee;
 }
@@ -134,7 +134,7 @@ nav {
     li a {
       display: block;
       font-weight: bold;
-      padding: 9px;
+      padding: 8px 12px;
     }
   }
 }
@@ -148,7 +148,7 @@ nav {
     'left nav    main   main   right'
     'left aside  main   main   right'
     'left lfoot  footer footer right';
-    grid-template-rows: min-content 200px 60px 160px auto min-content;
+    grid-template-rows: min-content 200px 60px 168px auto min-content;
     grid-template-columns: auto 200px 390px 390px auto;
   }
 }
