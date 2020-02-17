@@ -152,7 +152,7 @@ nav {
 }
 
 @media screen and (max-width: 880px) {
-  :root {font-size: 11pt;}
+  html {font-size: 11pt;}
   body {
     grid-template-areas:
     'top  top    top    top'
@@ -179,7 +179,7 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
-  :root {font-size: 10pt;}
+  html {font-size: 10pt;}
   body {
     grid-template-areas:
     'top    top    top    top'
