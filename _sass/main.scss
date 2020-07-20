@@ -88,6 +88,9 @@ article.article h5,
 article.article h6 {
     margin: 1em 0 0.5em;
 }
+article.article p {
+	margin-bottom: 0.5em;
+}
 article.heading,
 article.post,
 footer {
@@ -156,7 +159,7 @@ nav a.active:hover {background-color: gainsboro;}
 		grid-template-rows: min-content min-content auto min-content;
 		grid-template-columns: auto 1000px auto;
 	}
-	article.article {padding: 50px 150px;}
+	article.article {padding: 50px 150px 100px;}
 	h1 {font-size: 2.5rem;}
 	h2 {font-size: 2rem;}
 	header .logo {width: 160px;}
