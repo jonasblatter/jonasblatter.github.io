@@ -153,7 +153,7 @@ nav a.active:hover {background-color: gainsboro;}
 			'. nav .'
 			'. main .'
 			'. footer .';
-		grid-template-rows: unset;
+		grid-template-rows: min-content min-content auto min-content;
 		grid-template-columns: auto 1000px auto;
 	}
 	article.article {padding: 50px 150px;}
