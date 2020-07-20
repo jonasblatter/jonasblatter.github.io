@@ -11,13 +11,14 @@ html {
 }
 
 body {
+	height: 100%;
     display: grid;
     grid-template-areas:
 		'header'
 		'main'
 		'footer'
 		'nav';
-    grid-template-rows: 100px auto auto 51px;
+    grid-template-rows: 100px auto min-content 51px;
     background-color: gainsboro;
 }
 
