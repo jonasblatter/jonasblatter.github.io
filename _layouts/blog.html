@@ -4,11 +4,10 @@ layout: default
 
 <main class="blog">
   <article class="heading">
-    <h1>{{ page.title }}</h1>
-    <p>
+    <h1 class="blog-title">{{ page.title }}</h1>
+    <p>Categories: <i class="fa fa-tags" aria-hidden="true"></i><a>All</a>, 
       {% for item in site.data.categories %}
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>{% if forloop.last == false %} | {% endif %}
+        <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>{% if forloop.last == false %}, {% endif %}
       {% endfor %}
     </p>
   </article>
