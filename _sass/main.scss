@@ -151,8 +151,9 @@ article {
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 }
 .blog {
-	display:grid;
+	display: grid;
 	grid-gap: 2rem;
+	grid-auto-rows: max-content;
 }
 
 
@@ -202,7 +203,7 @@ footer a {
 	}
 	h1 {font-size: 2.5rem;}
 	h2 {font-size: 1.5rem;}
-	.article {padding: 100px 150px;}
+	.article {padding: 6rem 10rem;}
 	header .logo {width: 160px;}
 	header .brand {padding: 2rem 3rem;}
 	.footer-text {
