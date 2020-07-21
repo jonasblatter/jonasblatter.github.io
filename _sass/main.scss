@@ -53,8 +53,15 @@ a {
     text-decoration: none;
 	&:hover {
 		cursor: pointer;
-		color: var(--color-main-bright);
+		color: var(--color-main-dark);
 		background-color: var(--color-main-light);
+	}
+    &.active {
+		color: var(--color-main-dark);
+		background-color: var(--color-main-bright);
+		&:hover {
+			background-color: var(--color-main-bright);
+		}
 	}
 }
 .article {
@@ -127,14 +134,7 @@ nav {
 		display: block;
 		font-weight: bold;
 		padding: 13px;
-		&.active {
-			color: var(--color-main-dark);
-			background-color: var(--color-main-bright);
-			&:hover {
-				color: var(--color-main-dark);
-				background-color: var(--color-main-bright);
-			}
-		}
+
 	}
 }
 
