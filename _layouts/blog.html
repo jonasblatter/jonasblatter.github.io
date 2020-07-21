@@ -7,8 +7,8 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p>
       {% for item in site.data.categories %}
-        <i class="fa fa-folder" aria-hidden="true"></i>
-        <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }} | </a>
       {% endfor %}
     </p>
   </article>

@@ -51,11 +51,11 @@ dd+dt, dt+dd, dl {margin-top: 1em;}
 a {
     color: var(--color-main);
     text-decoration: none;
-    border-bottom: 1px solid currentcolor;
 	&:hover {
 		cursor: pointer;
 		color: var(--color-main-bright);
 		background-color: var(--color-main);
+		border-bottom: 1px solid currentcolor;
 	}
 }
 .article {
@@ -127,7 +127,6 @@ nav {
 		display: block;
 		font-weight: bold;
 		padding: 13px;
-		border: 0;
 		&.active {
 			color: var(--color-main-dark);
 			background-color: var(--color-main-bright);
