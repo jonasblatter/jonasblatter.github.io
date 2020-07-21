@@ -80,7 +80,7 @@ body {
 		'header' 100px
 		'main' auto
 		'footer' min-content
-		'nav' 56px
+		'nav' 50px
 		/ auto;
     background-color: var(--color-bg);
 }
@@ -123,7 +123,7 @@ nav {
 		background-color: var(--color-main);
 		display: block;
 		font-weight: bold;
-		padding: 0.8em;
+		padding: 13px;
 		border: 0;
 		&.active {
 			color: var(--color-main-dark);
