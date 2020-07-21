@@ -94,7 +94,7 @@ header {
 	position: fixed;
 	display: flex;
 	width: 100%;
-    background-color: steelblue;
+    background-color: var(--color-bg-light);
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 	.logo {
 		width: 100px;
@@ -163,7 +163,7 @@ footer {
 	justify-content: space-between;
 }
 footer a {
-	color: var(--color-main-light);
+	color: var(--color-main-bright);
 }
 
 
