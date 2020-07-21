@@ -203,25 +203,3 @@ footer a {
 		margin: 0 auto;
 	}
 }
-	nav, header {
-		position: unset;
-		box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
-	}
-	body {
-		grid:
-			'...... header ......' min-content
-			'...... nav    ......' min-content
-			'...... main   ......' 1fr
-			'footer footer footer' min-content
-			/ auto  1000px auto;
-	}
-	h1 {font-size: 2.5rem;}
-	h2 {font-size: 1.5rem;}
-	article.article {padding: 10px 150px 100px;}
-	header .logo {width: 160px;}
-	header .brand {padding: 2rem 3rem;}
-	.footer-text {
-		width: 1000px;
-		margin: 0 auto;
-	}
-}
