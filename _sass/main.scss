@@ -83,20 +83,6 @@ body {
 		'nav' 50px
 		/ auto;
     background-color: var(--color-bg);
-    &::before {
-		display: block;
-		height: 100px;
-		content: ' ';
-		grid-area: header;
-		z-index: -1;
-	}
-	&::after {
-		display: block;
-		height: 50px;
-		content: ' ';
-		grid-area: nav;
-		z-index: -1;
-	}
 }
 header {grid-area: header;}
 main {grid-area: main;}
@@ -182,6 +168,22 @@ footer a {
 	color: var(--color-main-bright);
 }
 
+@media only screen and (max-width: 1023px) {
+	body::before {
+		display: block;
+		height: 100px;
+		content: ' ';
+		grid-area: header;
+		z-index: -1;
+	}
+	body::after {
+		display: block;
+		height: 50px;
+		content: ' ';
+		grid-area: nav;
+		z-index: -1;
+	}
+}
 
 @media only screen and (min-width: 1024px) {
 	nav, header {
