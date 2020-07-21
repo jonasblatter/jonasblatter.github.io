@@ -55,7 +55,6 @@ a {
 		cursor: pointer;
 		color: var(--color-main-bright);
 		background-color: var(--color-main);
-		border-bottom: 1px solid currentcolor;
 	}
 }
 .article {
@@ -72,6 +71,7 @@ article {
 address {
     font-style: normal;
 }
+img {width: 100%;}
 
 /* LAYOUT */
 
