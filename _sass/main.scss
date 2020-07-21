@@ -23,8 +23,6 @@ html {
 }
 
 
-/* TYPOGRAPHY */
-
 .title {
 	color: var(--color-fg-dark);
     font-weight: bold;
@@ -67,6 +65,11 @@ a {
 		margin: 2em 0 0.5em;
     }
 }
+
+:focus {
+	outline: 2px solid var(--color-main-light);
+}
+
 article {
     p {
 		margin-bottom: 1em;
@@ -77,7 +80,7 @@ address {
 }
 img {width: 100%;}
 
-/* LAYOUT */
+
 
 body {
 	height: 100%;
