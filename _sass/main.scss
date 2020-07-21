@@ -53,14 +53,14 @@ a {
     text-decoration: none;
 	&:hover {
 		cursor: pointer;
-		color: var(--color-main-dark);
+		color: var(--color-main-bright);
 		background-color: var(--color-main-light);
 	}
     &.active {
 		color: var(--color-main-dark);
 		background-color: var(--color-main-bright);
 		&:hover {
-			background-color: var(--color-main-bright);
+			color: var(--color-main-dark);
 		}
 	}
 }
