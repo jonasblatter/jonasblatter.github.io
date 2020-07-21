@@ -63,6 +63,8 @@ a {
 	h1,h2,h3,h4,h5,h6 {
 		margin: 2em 0 0.5em;
     }
+}
+article {
     p {
 		margin-bottom: 1em;
     }
@@ -143,19 +145,19 @@ nav {
 
 
 article {
+    padding: 2rem 10vw 3rem;
 	color: var(--color-fg-dark);
     background-color: var(--color-bg-light);
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 }
-.article {
-    padding: 5px 10vw 5em;
+.blog {
+	display:grid;
+	grid-gap: 2rem;
 }
-.heading,
-.post,
+
+
 footer {
-    padding: 1em 2em;
-}
-footer {
+    padding: 1rem 2rem;
     color: var(--color-fg-light);
     background-color: var(--color-bg-dark);
 }
