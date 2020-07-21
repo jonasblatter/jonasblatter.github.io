@@ -51,18 +51,14 @@ dd+dt, dt+dd, dl {margin-top: 1em;}
 a {
     color: var(--color-main);
     text-decoration: none;
+    &.active {
+		color: var(--color-main-dark);
+		background-color: var(--color-main-bright);
+	}
 	&:hover {
 		cursor: pointer;
 		color: var(--color-main-bright);
 		background-color: var(--color-main-light);
-	}
-    &.active {
-		color: var(--color-main-dark);
-		background-color: var(--color-main-bright);
-		&:hover {
-			color: var(--color-main-dark);
-			background-color: var(--color-main-light);
-		}
 	}
 }
 .article {
