@@ -126,13 +126,15 @@ nav {
 		padding: 0.8em;
 		border: 0;
 		&.active {
-			color: var(--color-main-dim);
+			color: var(--color-main-dark);
 			background-color: var(--color-main-bright);
 			&:hover {
+				color: var(--color-main-dark);
 				background-color: var(--color-main-bright);
 			}
 		}
 		&:hover {
+			color: var(--color-main-bright);
 			background-color: var(--color-main-light);
 		}
 	}
