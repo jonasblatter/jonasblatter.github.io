@@ -119,7 +119,7 @@ nav {
 		text-align: center;
 	}
 	a {
-		color: var(--color-main-dark);
+		color: var(--color-main-bright);
 		background-color: var(--color-main);
 		display: block;
 		font-weight: bold;
@@ -133,7 +133,6 @@ nav {
 			}
 		}
 		&:hover {
-			color: var(--color-main-dark);
 			background-color: var(--color-main-light);
 		}
 	}
