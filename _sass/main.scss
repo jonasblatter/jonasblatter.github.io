@@ -50,13 +50,13 @@ dd+dt,
 dt+dd {margin-top: 1em;}
 
 a {
-    color: steelblue;
+    color: var(--color-main);
     text-decoration: none;
     border-bottom: 1px solid currentcolor;
 	&:hover {
 		cursor: pointer;
-		color: #333333;
-		background-color: rgba(225,245,255,0.5);
+		color: var(--color-main-bright);
+		background-color: var(--color-main);
 	}
 }
 .article {
