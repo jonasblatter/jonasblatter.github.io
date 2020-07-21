@@ -54,7 +54,7 @@ a {
 	&:hover {
 		cursor: pointer;
 		color: var(--color-main-bright);
-		background-color: var(--color-main);
+		background-color: var(--color-main-light);
 	}
 }
 .article {
@@ -134,10 +134,6 @@ nav {
 				color: var(--color-main-dark);
 				background-color: var(--color-main-bright);
 			}
-		}
-		&:hover {
-			color: var(--color-main-bright);
-			background-color: var(--color-main-light);
 		}
 	}
 }
