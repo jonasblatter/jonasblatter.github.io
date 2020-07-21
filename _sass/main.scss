@@ -85,12 +85,14 @@ body {
     background-color: var(--color-bg);
     &::before {
 		display: block;
+		height: 100px;
 		content: ' ';
 		grid-area: header;
 		z-index: -1;
 	}
 	&::after {
 		display: block;
+		height: 50px;
 		content: ' ';
 		grid-area: nav;
 		z-index: -1;
@@ -104,6 +106,7 @@ nav {grid-area: nav;}
 
 header {
 	position: fixed;
+	top: 0;
 	display: flex;
 	width: 100%;
     background-color: var(--color-bg-light);
