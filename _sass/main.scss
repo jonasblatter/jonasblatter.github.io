@@ -61,6 +61,7 @@ a {
 		background-color: var(--color-main-bright);
 		&:hover {
 			color: var(--color-main-dark);
+			background-color: var(--color-main-light);
 		}
 	}
 }
