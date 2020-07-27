@@ -1,3 +1,15 @@
+$color-main: #236AB9;
+$color-main-light: #609CE1;
+$color-main-bright: #E1ECF9;
+$color-main-dim: #133863;
+$color-main-dark: #091D34;
+$color-fg: #444444;
+$color-fg-light: #ECECEC;
+$color-fg-dark: #222222;
+$color-bg: #F5F5F5;
+$color-bg-light: #FFFFFF;
+$color-bg-dark: #333333;
+    
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -9,26 +21,16 @@ html {
     font-size: 16px;
     line-height: 1.5;
     height: 100%;
-    --color-main: #236AB9;
-    --color-main-light: #609CE1;
-    --color-main-bright: #E1ECF9;
-    --color-main-dim: #133863;
-    --color-main-dark: #091D34;
-    --color-fg: #444444;
-    --color-fg-light: #ECECEC;
-    --color-fg-dark: #222222;
-    --color-bg: #F5F5F5;
-    --color-bg-light: #FFFFFF;
-    --color-bg-dark: #333333;
+
 }
 
 
 .title {
-	color: var(--color-fg-dark);
+	color: $color-fg-dark;
     font-weight: 600;
 }
 .description {
-    color: var(--color-fg);
+    color: $color-fg;
     font-weight: 600;
 }
 p {
@@ -47,16 +49,16 @@ dt {float: right;}
 dd+dt, dt+dd, dl {margin-top: 1em;}
 
 a {
-    color: var(--color-main);
+    color: $color-main;
     text-decoration: none;
     &.active {
-		color: var(--color-main-dark);
-		background-color: var(--color-main-bright);
+		color: $color-main-dark;
+		background-color: $color-main-bright;
 	}
 	&:hover {
 		cursor: pointer;
-		color: var(--color-main-bright);
-		background-color: var(--color-main-light);
+		color: $color-main-bright;
+		background-color: $color-main-light;
 	}
 }
 .article {
@@ -67,7 +69,7 @@ a {
 }
 
 :focus {
-	outline: 2px solid var(--color-main-light);
+	outline: 2px solid $color-main-light;
 	position: relative;
 	z-index: 99;
 }
@@ -96,7 +98,7 @@ body {
 		'footer' min-content
 		'nav' 50px
 		/ auto;
-    background-color: var(--color-bg);
+    background-color: $color-bg;
 }
 header {grid-area: header;}
 main {grid-area: main;}
@@ -109,7 +111,7 @@ header {
 	top: 0;
 	display: flex;
 	width: 100%;
-    background-color: var(--color-bg-light);
+    background-color: $color-bg-light;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 	.logo {
 		width: 100px;
@@ -135,8 +137,8 @@ nav {
 		text-align: center;
 	}
 	a {
-		color: var(--color-main-bright);
-		background-color: var(--color-main);
+		color: $color-main-bright;
+		background-color: $color-main;
 		display: block;
 		font-weight: bold;
 		padding: 13px 0;
@@ -146,8 +148,8 @@ nav {
 
 article {
     padding: 2rem 10vw;
-	color: var(--color-fg-dark);
-    background-color: var(--color-bg-light);
+	color: $color-fg-dark;
+    background-color: $color-bg-light;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 }
 /*.blog {
@@ -159,8 +161,8 @@ article {
 
 footer {
     padding: 1rem 2rem;
-    color: var(--color-fg-light);
-    background-color: var(--color-bg-dark);
+    color: $color-fg-light;
+    background-color: $color-bg-dark;
 }
 .footer-text {
 	width: 100%;
@@ -168,7 +170,7 @@ footer {
 	justify-content: space-between;
 }
 footer a {
-	color: var(--color-main-bright);
+	color: $color-main-bright;
 }
 
 @media only screen and (max-width: 1023px) {
