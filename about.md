@@ -1,6 +1,4 @@
----
-title: "About Me"
----
+# About Me
 
 *I am currently a PhD student at the Institute of Philosophy at the University of Bern and a member of the Swiss Doctoral School in Affective Sciences at the University of Geneva.*
 
