@@ -1,6 +1,4 @@
----
-title: "Contact"
----
+#  Contact
 
 <address>
   <p>Institute of Philosophy<br>
