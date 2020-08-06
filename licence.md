@@ -1,7 +1,4 @@
----
-title: "Licence"
-author: creative commons
----
+# Licence
 
 ## <i class='fa fa-creative-commons'></i> Jonas Blatter 2020  
 
