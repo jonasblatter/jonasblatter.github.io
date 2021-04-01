@@ -73,6 +73,10 @@ current
 
 ## Teaching
 
+FS 2021
+: **Seminar: "Emotions in Ethics"**
+: Institute of Philosophy, University of Bern
+
 HS 2014
 : **Tutor: "Grundprobleme der Praktischen Philosophie"**
 : (eng. Basic problems of practical philosophy)
