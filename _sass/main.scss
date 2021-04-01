@@ -107,8 +107,8 @@ nav {grid-area: nav;}
 
 
 header {
-	position: fixed;
-	top: 0;
+// 	position: fixed;
+// 	top: 0;
 	display: flex;
 	width: 100%;
     background-color: $color-bg-light;
@@ -124,8 +124,8 @@ header {
 
 
 nav {
-	position: fixed;
-	bottom: 0;
+// 	position: fixed;
+// 	bottom: 0;
 	width: 100%;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
 	ul {
@@ -148,7 +148,8 @@ nav {
 
 article {
     padding: 2rem 10vw;
-	color: $color-fg-dark;
+    color: $color-fg-dark;
+    overflow: auto;
     background-color: $color-bg-light;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 }
@@ -192,7 +193,7 @@ footer a {
 
 @media only screen and (min-width: 1024px) {
 	nav, header {
-		position: unset;
+// 		position: unset;
 		box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 	}
 	body {
