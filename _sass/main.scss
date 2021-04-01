@@ -116,6 +116,7 @@ header {
     width: 100%;
     background-color: $color-bg-light;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+    z-index: 9;
 	.logo {
 		width: 100px;
 		object-fit: cover;
@@ -130,7 +131,7 @@ nav {
 // 	position: fixed;
 // 	bottom: 0;
 	width: 100%;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
 	ul {
 		list-style-type: none;
 		display: flex;
@@ -176,27 +177,28 @@ footer a {
 	color: $color-main-bright;
 }
 
-@media only screen and (max-width: 1023px) {
-	body::before {
-		display: block;
-		height: 100px;
-		content: ' ';
-		grid-area: header;
-		z-index: -1;
-	}
-	body::after {
-		display: block;
-		height: 50px;
-		content: ' ';
-		grid-area: nav;
-		z-index: -1;
-	}
-}
+// @media only screen and (max-width: 1023px) {
+// 	body::before {
+// 		display: block;
+// 		height: 100px;
+// 		content: ' ';
+// 		grid-area: header;
+// 		z-index: -1;
+// 	}
+// 	body::after {
+// 		display: block;
+// 		height: 50px;
+// 		content: ' ';
+// 		grid-area: nav;
+// 		z-index: -1;
+// 	}
+// }
 
 @media only screen and (min-width: 1024px) {
 	nav, header {
 // 		position: unset;
 		box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+		z-index: -1;
 	}
 	body {
 		grid:
