@@ -18,7 +18,7 @@ $color-bg-dark: #333333;
 
 html {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+// 	font-size: 16px;
 	line-height: 1.5;
 	height: 100%;
 }
@@ -102,20 +102,20 @@ img {
 body {
 	height: 100%;
 	display: grid;
-	grid:	'header' 100px
+	grid:	'header' 6.25rem
 		'main' 1fr
 		'footer' min-content
-		'nav' 50px
+		'nav' 3.125rem
 		/ auto;
 	background-color: $color-bg;
 }
 
 header {
 	grid-area: header;
-	position: fixed;
-	top: 0;
+// 	position: fixed;
+// 	top: 0;
 	display: flex;
-	width: 100%;
+// 	width: 100%;
 	background-color: $color-bg-light;
 	box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 	.logo {
@@ -129,7 +129,7 @@ header {
 
 main {
 	grid-area: main;
-	overflow: auto;
+// 	overflow: auto;
 }
 
 nav {
@@ -183,26 +183,16 @@ footer a {
 	color: $color-main-bright;
 }
 
-@media only screen and (max-width: 1023px) {
-	body::before {
-		display: block;
-		height: 100px;
-		content: ' ';
-		grid-area: header;
-		z-index: -1;
-	}
-	body::after {
-		display: block;
-		height: 50px;
-		content: ' ';
-		grid-area: nav;
-		z-index: -1;
-	}
+body::after {
+	display: block;
+	height: 50px;
+	content: ' ';
+	grid-area: nav;
+	z-index: -1;
 }
 
-@media only screen and (min-width: 1024px) {
-	nav,
-	header {
+@media only screen and (min-width: 66rem) {
+	nav {
 		position: unset;
 		box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
 	}
@@ -211,7 +201,10 @@ footer a {
 			'...... nav    ......' min-content
 			'...... main   ......' 1fr
 			'footer footer footer' min-content
-			/ auto  1000px auto;
+			/ auto  64rem auto;
+	}
+	body::after {
+		content: unset;
 	}
 	h1 {
 		font-size: 2.5rem;
@@ -223,13 +216,13 @@ footer a {
 		padding: 6rem 10rem;
 	}
 	header .logo {
-		width: 160px;
+		width: 10rem;
 	}
 	header .brand {
 		padding: 2rem 3rem;
 	}
 	.footer-text {
-		width: 1000px;
+		width: 60rem;
 		margin: 0 auto;
 	}
 }
