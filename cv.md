@@ -51,6 +51,10 @@ current
 
 ## Talks
 
+9 July 2021
+: **"Unfair Emotions"**
+: Conference “The Ethics of Emotions”, University of Bern, Switzerland (online)
+
 11 Oct. 2018
 : **"Moralising Emotions"**
 : Thumos Research Seminar, University of Geneva, Switzerland
@@ -73,21 +77,21 @@ current
 
 ## Teaching
 
-FS 2021
+Spring 2021
 : **Seminar: "Emotions in Ethics"**
 : Institute of Philosophy, University of Bern
 
-HS 2014
+Fall 2014
 : **Tutor: "Grundprobleme der Praktischen Philosophie"**
 : (eng. Basic problems of practical philosophy)
 : Institute of Philosophy, University of Bern
 
-FS 2013
+Spring 2013
 : **Tutor: "Einführungskurs Rechtsphilosophie"**
 : (eng. Introduction to philosophy of law)
 : Institute of Philosophy, University of Bern
 
-FS 2013
+Spring 2013
 : **Tutor: "Einführungskurs Politische Philosophie"**
 : (eng. Introduction to political philosophy)
 : Institute of Philosophy, University of Bern
