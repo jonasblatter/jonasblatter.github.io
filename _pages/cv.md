@@ -1,8 +1,7 @@
 ---
+title: "CV"
 permalink: /cv/
 ---
-
-# CV
 
 *I am currently a postdoc researcher in the INTERACT! project and the Institute of Philosophy I at the Ruhr University Bochum.*
 

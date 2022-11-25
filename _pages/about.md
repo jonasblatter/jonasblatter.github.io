@@ -1,6 +1,6 @@
 ---
-permalink: /about/
 title: "About Me"
+permalink: /about/
 ---
 
 *I am a philosopher working in ethics, ethics of digital technology, and theory of emotion.*
