@@ -9,3 +9,13 @@ main:
   url: /tags/
 - title: Categories
   url: /categories/
+
+docs:
+  - title: Activities
+    children:
+      - title: "Recent Posts"
+        url: /posts/
+      - title: "Tags"
+        url: /tags/
+      - title: "Categories"
+        url: /categories/
