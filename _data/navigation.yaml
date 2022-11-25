@@ -11,11 +11,11 @@ main:
   url: /categories/
 
 docs:
-  - title: Activities
+  - title: Posts
     children:
-      - title: "Recent Posts"
+      - title: "Sort by Date"
         url: /posts/
-      - title: "Tags"
+      - title: "Sort by Tag"
         url: /tags/
-      - title: "Categories"
+      - title: "Sort by Category"
         url: /categories/
