@@ -3,5 +3,9 @@ main:
   url: /about/
 - title: CV
   url: /cv/
-- title: Activities
+- title: Recent
   url: /posts/
+- title: Tags
+  url: /tags/
+- title: Categories
+  url: /categories/
