@@ -69,13 +69,6 @@ footer:
       url: "https://zirk.us/@jonasblatter/"
 
 defaults:
-  # _docs
-  - scope:
-    path: ""
-    type: docs
-    values:
-      sidebar:
-        nav: "docs"
   # _posts
   - scope:
       path: ""
