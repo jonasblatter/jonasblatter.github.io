@@ -1,17 +1,7 @@
+main:
 - title: About
-  url: /about.html
+  url: /about/
 - title: CV
-  url: /cv.html
+  url: /cv/
 - title: Activities
-  url: /blog.html
-  subnav:
-  - title: Posters
-    url: /blog/posters.html
-  - title: Projects
-    url: /blog/projects.html
-  - title: Talks
-    url: /blog/talks.html
-  - title: Texts
-    url: /blog/texts.html
-- title: Contact
-  url: /contact.html
+  url: /blog/
