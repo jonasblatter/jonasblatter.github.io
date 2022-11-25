@@ -1,8 +1,14 @@
 title: Jonas Blatter
 description: Personal Website
 logo: https://avatars2.githubusercontent.com/u/14215958
-markdown: kramdown
 url: https://jonasblatter.github.io/
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+
+minimal_mistakes_skin: default
+search: true
 
 collections:
   category:
@@ -10,3 +16,11 @@ collections:
 
 titles_from_headings:
   strip_title: true
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
