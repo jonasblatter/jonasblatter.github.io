@@ -1,8 +1,0 @@
-{% for post in include.posts %}
-<section class="post">
-    <h2>{{ post.title }}</h2>
-    {% include tags.html item=post %}
-    <p>{{ post.excerpt }}
-    <a href="{{ post.url }}" class="card-link">Read more &rsaquo;</a></p>
-</section>
-{% endfor %}
