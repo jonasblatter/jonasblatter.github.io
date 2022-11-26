@@ -78,8 +78,8 @@ defaults:
       author_profile: true
       read_time: false
       show_date: true
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
       sidebar:
         nav: "docs"
@@ -90,8 +90,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      sidebar:
-        nav: "docs"
 
 category_archive:
   type: liquid
