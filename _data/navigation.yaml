@@ -3,6 +3,8 @@ main:
   url: /about/
 - title: Vita
   url: /cv/
+- title: Reserach
+  url: /research/
 # - title: Recent
 #   url: /posts/
 # - title: Tags
