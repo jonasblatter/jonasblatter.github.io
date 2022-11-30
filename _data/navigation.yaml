@@ -1,14 +1,14 @@
 main:
-- title: About
+- title: About Me
   url: /about/
-- title: CV
+- title: Vita
   url: /cv/
-- title: Recent
-  url: /posts/
-- title: Tags
-  url: /tags/
-- title: Categories
-  url: /categories/
+# - title: Recent
+#   url: /posts/
+# - title: Tags
+#   url: /tags/
+# - title: Categories
+#   url: /categories/
 
 docs:
   - title: Posts
