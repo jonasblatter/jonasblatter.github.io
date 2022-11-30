@@ -38,7 +38,7 @@ plugins:
 author:
   name   : "Jonas Blatter"
   avatar : "/assets/img/profile.png"
-  bio    : "Postdoc researcher in ethics, philosophy of emotion, and ethics of digital technology."
+  bio    : "Postdoc researcher in ethics, philosophy of emotion, and ethics of digital technology"
   # links:
   #   - label: "PhilPeople"
   #     icon: "fas fa-fw fa-link"
